@@ -1,0 +1,34 @@
+{
+  "name": "ahead-er",
+  "version": "1.0.0",
+  "description": "A simple way to add headers to your HTTP requests.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "author": "Brandon Johnson <b@johnsonmn.org>",
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "^1.11.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brampersandon/ahead-er.git"
+  },
+  "keywords": [
+    "http",
+    "header",
+    "add",
+    "headers",
+    "requests"
+  ],
+  "bugs": {
+    "url": "https://github.com/brampersandon/ahead-er/issues"
+  },
+  "homepage": "https://github.com/brampersandon/ahead-er#readme"
+}
