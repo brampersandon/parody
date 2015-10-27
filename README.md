@@ -32,6 +32,6 @@ with ease. It helps me proxy HTTP requests to my Docker containers. You might be
 
 ## What's next?
 
-- A prettier debug mode
-– A CLI
-– More awesomeness that hasn't yet been explored
+- A prettier debug mode  
+- A CLI  
+- More awesomeness that hasn't yet been explored  
