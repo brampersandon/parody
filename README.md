@@ -12,7 +12,7 @@ Good deal.
 
 1. Clone this repository
 2. Run `npm install` to pull in dependencies
-3. Rename `headers.json.example` to `headers.json` and set the variables therein
+3. Rename `headers.example.json` to `headers.json` and set the variables therein
 as appropriate to your application.
 4. Run `npm start` to start the server
 5. Access `http://localhost:$PORT` (where `$PORT` is your environment var, or
@@ -21,6 +21,9 @@ as appropriate to your application.
 ## No, seriously, what good is this bundle'o'javascript?
 Some apps hosted behind a web server (like Apache) use HTTP headers to pass
 information from the web server to the application itself.
+
+This is particularly helpful if you're looking to provide information through HTTP
+headers, as though you were running a [Shibboleth Service Provider](https://wiki.shibboleth.net/).
 
 Using *ahead-er*, you can make it really easy to add headers to all your HTTP
 requests, by proxying them through the awesome

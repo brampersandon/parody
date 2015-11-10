@@ -1,7 +1,7 @@
 {
-  "headers" : {
-    "REMOTE_USER" : "gretta",
-    "ROLE" : "rockstar"
+  "headers": {
+    "REMOTE_USER": "gretta",
+    "ROLE": "rockstar"
   },
   "target": "http://some-awesome-hostname:8080",
   "debug": true

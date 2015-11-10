@@ -1,6 +1,6 @@
 var assert = require("assert");
 var http = require("http");
-var config = require("../headers.json");
+var config = require("../headers.example.json");
 var s = require("./sillyserver.js");
 var a = require("../app.js");
 
