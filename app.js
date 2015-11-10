@@ -1,5 +1,5 @@
 var httpProxy = require('http-proxy');
-var config = require('./headers.json');
+var config = require('./headers.example.json');
 var port = process.env.PORT || 8080;
 
 proxy = httpProxy.createProxyServer({target: config.target}).listen(port, function(){
