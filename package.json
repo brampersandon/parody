@@ -1,6 +1,6 @@
 {
-  "name": "ahead-er",
-  "version": "1.0.0",
+  "name": "parody",
+  "version": "1.0.1",
   "description": "A simple way to add headers to your HTTP requests.",
   "main": "app.js",
   "scripts": {
@@ -10,7 +10,8 @@
   "author": "Brandon Johnson <b@johnsonmn.org>",
   "license": "MIT",
   "dependencies": {
-    "http-proxy": "^1.11.2"
+    "http-proxy": "^1.11.2",
+    "minimist": "^1.2.0"
   },
   "directories": {
     "test": "test"
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/brampersandon/ahead-er.git"
+    "url": "git+ssh://git@github.com/skylineproject/parody.git"
   },
   "keywords": [
     "http",
@@ -30,7 +31,8 @@
     "requests"
   ],
   "bugs": {
-    "url": "https://github.com/brampersandon/ahead-er/issues"
+    "url": "https://github.com/skylineproject/parody/issues"
   },
-  "homepage": "https://github.com/brampersandon/ahead-er#readme"
+  "homepage": "https://github.com/skylineproject/parody#readme",
+  "bin": "./app.js"
 }

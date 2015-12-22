@@ -1,0 +1,9 @@
+{
+  "headers": {
+    "REMOTE_USER": "blerg",
+    "ROLE": "silly"
+  },
+  "target": "http://some-awesome-hostname:8080",
+  "debug": true,
+  "port": 5050
+}

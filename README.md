@@ -1,40 +1,52 @@
-# ahead-er
+# Parody
 
-Making HTTP requests is all fun and games until you need to modify your request
-headers.
+Building web apps that pull information from the environment is
+all fun and games until you need to modify your request headers.
 
-Now, it can continue to be fun and games, even *when* you need to modify your
-request headers!
-
-Good deal.
+Now, it can continue to be fun and games, even *when* you need
+to modify your request headers!
 
 ## Quick start
 
-1. Clone this repository
-2. Run `npm install` to pull in dependencies
-3. Rename `headers.example.json` to `headers.json` and set the variables therein
-as appropriate to your application.
-4. Run `npm start` to start the server
-5. Access `http://localhost:$PORT` (where `$PORT` is your environment var, or
-  8080 if no env var is set)
+1. Run `npm install -g parody` to install the command-line tool
+2. Move to your working directory
+3. Create a `parody.json` file that has at least the following directives
 
-## No, seriously, what good is this bundle'o'javascript?
-Some apps hosted behind a web server (like Apache) use HTTP headers to pass
-information from the web server to the application itself.
+```json
+{
+  "headers": {
+    "header_one": "value_one",
+    "header_two": "value_two"
+  },
+  "target": "http://some-awesome-hostname:8080",
+  "debug": false,
+  "port": 8080
+}
+```
 
-This is particularly helpful if you're looking to provide information through HTTP
-headers, as though you were running a [Shibboleth Service Provider](https://wiki.shibboleth.net/).
+This will add the following HTTP headers to the request:
 
-Using *ahead-er*, you can make it really easy to add headers to all your HTTP
-requests, by proxying them through the awesome
-[node-http-proxy](http://github.com/nodejitsu/node-http-proxy).
+```
+"header_one" = value_one
+"header_two" = value_two
+```
 
-This app simply wraps node-http-proxy, so you can add headers in a config file
-with ease. It helps me proxy HTTP requests to my Docker containers. You might be
- interested if you, too, use containers to manage local development of web apps.
+4. Run `parody` in your working directory to start a proxy server
+5. Access `http://localhost:$PORT` (where `$PORT` is your configured port in
+  `parody.json`, or a default of `8080`)
 
-## What's next?
+## Report issues!
 
-- A prettier debug mode  
-- A CLI  
-- More awesomeness that hasn't yet been explored  
+If you encounter anything strange while using parody, make an issue, or [ask me on Twitter](http://twitter.com/brandon_mn).
+
+## Incoming improvements
+
+- expanded documentation
+- revamped debug mode
+- HTTPS support
+
+## See also:
+
+Parody uses [Node HTTP Proxy](http://npmjs.com/http-proxy) to add headers
+to HTTP requests. If you're looking to programmatically proxy things, check
+out that project.

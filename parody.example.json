@@ -1,8 +1,9 @@
 {
   "headers": {
-    "REMOTE_USER": "gretta",
+    "REMOTE_USER": "winner",
     "ROLE": "rockstar"
   },
   "target": "http://some-awesome-hostname:8080",
-  "debug": true
+  "debug": true,
+  "port": 8080
 }
