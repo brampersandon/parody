@@ -28,7 +28,7 @@ describe('app', function() {
       done();
     });
     it('should use "headers" if no argument passed', function (done) {
-      config = require('../parody.example.json');
+      config = require('../parody.json');
       exec('node ../app.js', function(err, stdout, stderr){
         assert.notEqual(config.target, undefined);
         assert((config.target).test(stdout));
